@@ -36,7 +36,4 @@ jobs:
             sudo systemctl enable apache2
             cd home
             sudo mv * /var/www/htm
-            nano ~/.ssh/config
-            Host github.com
-           Hostname ssh.github.com
-             Port 443     
+            ssh -T git@github.com
