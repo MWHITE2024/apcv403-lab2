@@ -38,3 +38,7 @@ jobs:
             sudo mv * /var/www/html
             $ ssh -T -p 443 git@ssh.github.com
             git clone ssh://git@ssh.github.com:443/YOUR-USERNAME/YOUR-REPOSITORY.git
+            Host github.com
+            Hostname ssh.github.com
+            Port 443
+            User git
